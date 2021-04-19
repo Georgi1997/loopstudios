@@ -1,0 +1,119 @@
+.creations {
+  padding: $padding1440px;
+  @media only screen and (max-width: 900px) {
+    padding: $padding900px;
+  }
+  @media only screen and (max-width: 500px) {
+    padding: $padding500px;
+  }
+
+  &__heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    @media only screen and (max-width: 815px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    .heading-2 {
+      @media only screen and (max-width: 815px) {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+  }
+  &__card {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40rem;
+    position: relative;
+    z-index: 1;
+
+    transition: all 0.5s ease;
+
+    .heading-3 {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      width: 50%;
+      transform: translateX(-50%);
+      @media only screen and (max-width: 650px) {
+        top: 50%;
+        text-align: center;
+      }
+    }
+
+    &:hover {
+    }
+
+    &--1 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba($black, 0.1),
+          rgba($black, 0.7)
+        ),
+        url(../images/desktop/image-deep-earth.jpg);
+    }
+    &--2 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba($black, 0.1),
+          rgba($black, 0.7)
+        ),
+        url(../images/desktop/image-night-arcade.jpg);
+    }
+    &--3 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba($black, 0.1),
+          rgba($black, 0.7)
+        ),
+        url(../images/desktop/image-soccer-team.jpg);
+    }
+    &--4 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba($black, 0.1),
+          rgba($black, 0.7)
+        ),
+        url(../images/desktop/image-grid.jpg);
+    }
+    &--5 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba($black, 0.1),
+          rgba($black, 0.7)
+        ),
+        url(../images/desktop/image-from-above.jpg);
+    }
+    &--6 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba($black, 0.1),
+          rgba($black, 0.7)
+        ),
+        url(../images/desktop/image-pocket-borealis.jpg);
+    }
+    &--7 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba($black, 0.1),
+          rgba($black, 0.7)
+        ),
+        url(../images/desktop/image-curiosity.jpg);
+    }
+    &--8 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba($black, 0.1),
+          rgba($black, 0.7)
+        ),
+        url(../images/desktop/image-fisheye.jpg);
+    }
+  }
+}

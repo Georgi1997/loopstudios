@@ -1,0 +1,43 @@
+.features {
+  padding: $padding1440px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column;
+    text-align: center;
+  }
+  @media only screen and (max-width: 900px) {
+    padding: $padding900px;
+  }
+  @media only screen and (max-width: 500px) {
+    padding: $padding500px;
+  }
+
+  &__img {
+    @media only screen and (max-width: 1000px) {
+      margin: 0 auto;
+    }
+    img {
+      @media only screen and (max-width: 1000px) {
+        width: 90%;
+      }
+    }
+  }
+  &__text {
+    background-color: $white;
+    padding: 7rem 7rem 2rem;
+    position: absolute;
+    width: 40%;
+    right: 15rem;
+    @media only screen and (max-width: 1250px) {
+      width: 55%;
+      right: 5rem;
+      padding: 5rem 3rem;
+    }
+    @media only screen and (max-width: 1000px) {
+      width: 100%;
+      position: static;
+    }
+  }
+}
